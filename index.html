@@ -547,15 +547,19 @@
 
         <div class="mailing-footer-box">
           <p class="mailing-title">Підпишіться на розсилку</p>
-          <form class="mailing">
-            <label for="mail"></label>
-            <input type="email" name="mail" id="mail" placeholder="E-mail" />
-            <button type="submit" class="mailing-btn">
-              <span class="mailing-text">Підписатися</span
-              ><svg class="mailing-icon" width="24px" height="24px">
-                <use href="./sprite.svg#icon-send"></use>
-              </svg>
-            </button>
+          <form class="mailing-footer">
+            <div class="form-mailing-footer">
+              <label for="mail"></label>
+              <input type="email" name="mail" id="mail" placeholder="E-mail" />
+            </div>
+            <div>
+              <button type="submit" class="mailing-btn-footer">
+                <span class="mailing-text">Підписатися</span
+                ><svg class="mailing-icon" width="24px" height="24px">
+                  <use href="./sprite.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
           </form>
         </div>
       </div>
@@ -563,6 +567,42 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <form class="modal-group">
+          <p class="modal-form-title">Залиште свої дані, ми вам передзвонимо</p>
+          <div class="modal-group-form">
+            <div class="form-field">
+              <label for="name">Ім'я</label>
+              <input type="text" name="name" id="name" />
+            </div>
+
+            <div class="form-field">
+              <label for="tel">Телефон</label>
+              <input type="tel" name="tel" id="tel" />
+            </div>
+
+            <div class="form-field">
+              <label for="email">Пошта</label>
+              <input type="email" name="email" id="email" />
+            </div>
+
+            <div class="form-field">
+              <label for="comment">Коментар</label>
+              <input type="comment" name="comment" id="comment" />
+            </div>
+          </div>
+
+          <div class="modal-form-checkbox">
+            <input type="checkbox" name="" value="text" id="text" />
+            <label for="text"
+              ><span class="modal-form-text"
+                >Погоджуюся з розсилкою та приймаю</span
+              ><a href="#" class="modal-form-link">Умови договору</a></label
+            >
+          </div>
+
+          <button type="submit" class="modal-form-btn">Відправити</button>
+        </form>
+
         <button type="button" class="modal-btn" data-modal-close>
           <svg class="icon-close-btn" width="18px" height="18px">
             <use href="./sprite.svg#icon-close-btn"></use>
