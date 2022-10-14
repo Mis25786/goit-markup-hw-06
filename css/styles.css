@@ -866,10 +866,11 @@ nav {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-mailing-footer:hover input,
-.form-mailing-footer:focus input {
+.mailing-input:hover,
+.mailing-input:focus {
+  color: #ffffff;
   border-color: var(--accent-color);
-
+  outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -986,6 +987,9 @@ nav {
   height: 581px;
 }
 
+input {
+}
+
 .modal-form-title {
   display: block;
   margin-bottom: 12px;
@@ -1045,7 +1049,7 @@ nav {
 .form-input:hover,
 .form-input:focus {
   border: 1px solid var(--accent-color);
-
+  outline: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1077,10 +1081,13 @@ nav {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+textarea {
+}
+
 .form-comment:hover,
 .form-comment:focus {
   border: 1px solid var(--accent-color);
-
+  outline: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
